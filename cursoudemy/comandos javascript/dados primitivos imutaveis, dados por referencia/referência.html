@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    
+    /*
+    Os dados por referência são:
+    
+    array
+    object
+    function
+    */
+    
+    let a = [1, 2, 3]
+    let b = a // Vai no mesmo lugar da memória do a, não é uma cópia
+    let c = b // Vai apontar para o mesmo local da memória do b que seria o mesmo do a
+    
+    let d = [...a] // Com esses 3 pontinhos você copia o valor da array
+    
+    console.log(a, b)
+    
+    a.push(4)
+    console.log(a, b)
+    
+    b.pop()
+    console.log(a, b)
+    
+    a.push("joao")
+    console.log(a, b, c, d)
+    
+    
+    
+  </script>
+</body>
+
+</html>
