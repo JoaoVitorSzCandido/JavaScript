@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+:root {
+  --cor-principal: #1C7FAE;
+  --cor-principal-dark: #134D68;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: var(--cor-principal);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+div > p {
+  line-height: 1.5em;
+}
+
+.conteiner {
+  background: #fff;
+  width: 90vw;
+  height: 90%;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+}
+form label {
+  font-size: 1.3em;
+}
+form input, form button {
+  height: 40px;
+  width: 100%;
+}
+form input:focus {
+  outline: 2px solid var(--cor-principal);
+}
+form button {
+  color: #fff;
+  background: var(--cor-principal);
+}
+form button:hover {
+  background: var(--cor-principal-dark);
+}
