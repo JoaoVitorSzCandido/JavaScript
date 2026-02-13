@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+}
+
+#conteinerlight {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.light {
+  transition: 0.3s;
+  background: gray;
+  width: 250px;
+  height: 250px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.lighton {
+  transition: 0.3s;
+  background: #FFEB30;
+  box-shadow: 1px 1px 0px #0B0A0166;
+}
