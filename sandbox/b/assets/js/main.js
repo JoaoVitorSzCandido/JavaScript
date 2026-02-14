@@ -18,3 +18,19 @@ light.addEventListener("click", function() {
   }
   }
   )
+  
+  // End light toggle
+  
+  const darkToggle = document.querySelector("#toggle")
+  const body = document.querySelector("body")
+  
+  darkToggle.addEventListener("click", function() {
+    
+    if (body.classList.contains("dark")) {
+      body.classList.remove("dark")
+    }else {
+      body.classList.add("dark")
+    }
+    
+  }
+  )

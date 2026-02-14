@@ -2,14 +2,25 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  transition: 0.3s;
 }
 
 body {
   height: 100vh;
 }
 
+header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#toggle {
+  margin: 10px;
+  padding: 5px;
+}
+
 #conteinerlight {
-  height: 100vh;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,4 +40,10 @@ body {
   transition: 0.3s;
   background: #FFEB30;
   box-shadow: 1px 1px 0px #0B0A0166;
+}
+
+.dark {
+  transition: 0.5s;
+  background: #3F3F3F;
+  color: #FFFFFFB5;
 }
