@@ -46,4 +46,9 @@ header {
   transition: 0.5s;
   background: #3F3F3F;
   color: #FFFFFFB5;
+  text-box: light;
+}
+
+#toggle {
+  border-radius: 15px;
 }
