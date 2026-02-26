@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+:root {
+  --cor-principal: #1C7FAE;
+  --cor-principal-dark: #134D68;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: var(--cor-principal);
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  background: white;
+}
+
+ul {
+  background: white;
+}
