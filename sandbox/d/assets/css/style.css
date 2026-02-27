@@ -23,3 +23,7 @@ p {
 ul {
   background: white;
 }
+
+button {
+  margin-left: 20px;
+}
