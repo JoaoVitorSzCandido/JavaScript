@@ -21,9 +21,20 @@ p {
 }
 
 ul {
+  background: #EFEFEF;
+  padding: 0px;
+  text-align: center;
+}
+
+li {
   background: white;
+  color: black;
+  padding: 5px;
+  text-align: left;
 }
 
 button {
   margin-left: 20px;
+  outline: 0px;
+  border: 0px;
 }
