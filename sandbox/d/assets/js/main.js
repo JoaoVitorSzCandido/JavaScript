@@ -2,7 +2,10 @@ function scope(){
 
 const button = document.querySelector("#save");
 const listFood = document.querySelector("#foodList");
-const clear = document.querySelector("#clear")
+const clear = document.querySelector("#clear");
+const counterText = document.querySelector("#counterText")
+
+let counter = 0;
 let itemText = document.querySelector("#item");
 let textStorage = [];
 
@@ -38,23 +41,26 @@ button.addEventListener("click", function(){
   // Joga o texto do input em uma array, pra armazenar
   textStorage.push(text);
   
+  // Toda vez que clicar vai adiciona +1 no contador, ja ta incluido a verificação, não vai ter clicks a mais
+  counter++
+  counterText.textContent = counter
+  
   // "Víncula" o botão de remover diretamente no "li"
   newItem.appendChild(removeItem);
   
   // Faz o "li" ir pro "ul"
   listFood.appendChild(newItem);
   }
-  
-  console.log(textStorage);
-  
   }
   );
   
   // Listener "clear"
   clear.addEventListener("click", function() {
-  listFood.innerHTML = "Food list"
-  textStorage = []
-  })
+  listFood.innerHTML = "";
+  textStorage = [];
+  counterText.textContent = 0;
+  counter = 0;
+  });
 };
 
 scope()
