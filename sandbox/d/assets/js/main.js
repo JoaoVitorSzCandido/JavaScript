@@ -28,8 +28,10 @@ button.addEventListener("click", function(){
   
   // Listener pra remover um "li"
   removeItem.addEventListener("click", function(){
-    newItem.remove()}
-  );
+    newItem.remove();
+    counter--
+    counterText.textContent = counter;
+  })
   
   // Verificação, pra evitar campo vazio ou repetido
   if (text === ""){

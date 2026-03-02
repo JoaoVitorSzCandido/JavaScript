@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 :root {
-  --cor-principal: #1C7FAE;
-  --cor-principal-dark: #134D68;
 }
 
 * {
@@ -13,7 +11,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: var(--cor-principal);
+  background: #727272;
   font-family: "Open Sans", sans-serif;
 }
 
